@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+  background: linear-gradient(135deg, rgb(18, 0, 98),rgb(0, 229, 255));
+  border: none;
+}
