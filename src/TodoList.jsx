@@ -109,6 +109,7 @@ const Wrapper = styled.section`
     text-align: center;
     border: 1px solid #0000007;
   }
+  
   h1 {
     margin: 30px 0;
     font-size: 30px;
@@ -120,7 +121,7 @@ const Wrapper = styled.section`
     border-radius: 8px;
   }
   button {
-    width: 60px;
+    width: 150px;
     margin: 0 5px;
     font-weight: 400;
     padding: 10px;
@@ -155,14 +156,36 @@ const Wrapper = styled.section`
     margin: 0 5px;
     font-size: 12px;
     border-radius: 8px;
-  }
-  li input {
-    width: 50%;
-    height: 40px;
-    margin: 0;
-    background: none;
-    font-size: 14px;
-  }
-`;
+    }
+    li input {
+        width: 50%;
+        height: 40px;
+        margin: 0;
+        background: none;
+        font-size: 14px;
+        }
+
+        @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+        li .list-btn button {
+            width: 50px;
+            font-size: 10px;
+        }
+        }
+         @media only screen and (max-width: 400px) {
+            input {
+               width: 80%;
+        }
+            .list-container {
+                width: 90%;
+        }
+            li .list-btn button {
+                width: 40px;
+                font-size: 8px;
+        }
+}
+        `;
 
 export default TodoList;
